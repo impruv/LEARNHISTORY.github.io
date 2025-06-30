@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Учи историю</title>
+</head>
+    <body>
+
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+    </div>
+
+    <div class="wrapper__content">
+        <header class="header">
+            <div class="container">
+                <img src="./images/logo.webp" class="header__logo" height="80" width="80" alt="logo">
+    
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#articles-section" class="text_white-bold">Статьи</a>
+                        </li>
+    
+                        <li class="header__item">
+                            <a href="#footer" class="text_white-bold">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <main class="main container">
+            <h1 class="main__header title">Статьи</h1>
+    
+            <section class="main__filters">
+                <select name="section" class="main__sections select" id="section">
+                    <option class="main__sections-option text_black" value="world">Всемирная история</option>
+                    <option class="main__sections-option text_black" value="russia">Отечественная история</option>
+                </select>
+    
+                <select name="world-stages" class="main__world-stages select select_large" id="world-stages">
+                </select>
+    
+                <select name="russian-stages" class="main__russian-stages select select_large hidden" id="russian-stages">
+                </select>
+    
+                <button class="main__clear-button button button_without-border button_with-cross" id="clear-filters-button">Сбросить фильтры</button>
+            </section>
+    
+            <section class="main__articles" id="articles-section">
+                <ul class="main__list" id="articles-list">
+                </ul>
+    
+                <div class="main__show-more-button-wrapper">
+                    <button class="main__show-more-button button">ПОКАЗАТЬ ЕЩЕ</button>
+                </div>
+            </section>
+
+            <section class="section__fact">
+                <div class="container">
+                    <h2 class="fact__title section__title">Интересные факты</h2>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="fact__card">
+                                    <h4 class="fact__card-title">Самое крупное наступление Красной Армии</h4>
+                                    <p class="fact__card-subtitle">Битва за Берлин (с 16 апреля по 2 мая 1945 года) была самым масштабным наступательным операцией Красной Армии. В ней участвовало около 2,5 миллионов солдат , более 6000 танков , 7500 самолётов и 41 тысяча орудий и миномётов .</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fact__card">
+                                    <h4 class="fact__card-title">Рейхстаг был взят не сразу</h4>
+                                    <p class="fact__card-subtitle">Хотя рейхстаг считался символом победы, его штурм начался 30 апреля , то есть за два дня до окончания боёв в Берлине. Его обороняли отчаянно, и первым его достиг отряд старшего сержанта Михаила Егорова и младшего сержанта Мелитона Кантарии , подняв Знамя Победы 30 апреля 1945 года.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fact__card">
+                                    <h4 class="fact__card-title">Берлин был разделён на сектора ещё до окончания войны</h4>
+                                    <p class="fact__card-subtitle">Ещё до того, как Берлин официально капитулировал, союзники договорились о разделении контроля над городом между СССР, США, Великобританией и Францией. Это стало основой для последующего формирования Восточного и Западного Берлина в период Холодной войны.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section__editors">
+                <div class="container">
+                    <h2 class="section__title editors__title">Наши редакторы</h2>
+                    <ul class="editors__list"></ul>
+                </div>
+            </section>
+
+
+        </main>
+    
+        <footer class="footer" id="footer">
+            <div class="footer__cantainer container">
+                <img class="footer__logo" src="./images/logo.webp" height="160" width="160" alt="logo">
+    
+                <div class="footer__contacts">
+                    <ul class="footer__contacts-links">
+                        <li class="footer__contacts-links-item">
+                            <a href="https://t.me/istworld" aria-label="Telegram">
+                                <img src="./images/telegram-icon.svg" alt="Telegram" width="24" height="24">
+                            </a>
+                        </li>
+    
+                        <li class="footer__contacts-links-item">
+                            <a href="https://vk.com/dorostol" aria-label="Vk">
+                                <img src="./images/vk-icon.svg" alt="Vk" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer___contacts-list">
+                        <li class="footer__contacts-list-item">
+                            <a class="footer__contacts-list-item-link text_white-bold" href="mailto:artyom2003gh@mail.ru">
+                                artyom2003gh@mail.ru
+                            </a>
+                        </li>
+        
+                        <li class="footer__contacts-list-item">
+                            <a class="footer__contacts-list-item-link text_white-bold" href="tel:89024339557">
+                                8-902-433-95-57
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <p class="footer__address text_white-bold">
+                        респ. Марий Эл г. Йошкар-Ола ул. Карла Либкнехта 98 22
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
